@@ -1,0 +1,43 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilos del navbar */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilos del carrusel */
+  .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Estilos de las tarjetas de productos */
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Estilos del modal del carrito */
+  .modal-header {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+  }
+
