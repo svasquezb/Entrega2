@@ -1,6 +1,13 @@
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: ;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(37, 6, 109);
   }
   
   /* Estilos del navbar */
@@ -39,5 +46,19 @@ body {
   footer {
     background-color: #343a40;
     color: #fff;
+    margin-top: auto;
   }
 
+.container .mt-5{
+  margin-bottom: 12px;
+}
+
+.card{
+  color: rgb(54, 54, 54);
+}
+
+#carouselExampleIndicators{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
