@@ -43,6 +43,23 @@ function renderCart() {
   totalPrice.textContent = `$${total.toFixed(2)}`;
 }
 
+// Modificación para mostrar la descripción completa y agregar al carrito al hacer clic en "Ver Más"
+const seeMoreButtons = document.querySelectorAll('.btn-add-to-cart');
+seeMoreButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const productCard = button.closest('.card');
+    const description = productCard.querySelector('.description').textContent;
+    const price = parseFloat(productCard.querySelector('.price').textContent.replace('$', ''));
+    const title = productCard.querySelector('.card-title').textContent;
+
+    const product = { title: title, price: price, description: description };
+    // Muestra la descripción completa
+    alert(description);
+    // Agrega el producto al carrito
+    addToCart(product);
+  });
+});
+
 // Agregar event listeners a los botones "Agregar al carrito"
 const addToCartButtons = document.querySelectorAll('.btn-add-to-cart');
 addToCartButtons.forEach(button => {
