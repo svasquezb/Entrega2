@@ -8,6 +8,10 @@ body {
     min-height: 100vh;
     background-color: rgb(37, 6, 109);
   }
+
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Fuente para títulos */
+  }
   
   /* Estilos del navbar */
   .navbar-brand {
