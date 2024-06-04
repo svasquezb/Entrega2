@@ -65,3 +65,25 @@ body {
   padding-bottom: 70px;
   text-align: center;
 }
+
+@media (max-width: 768px) { 
+  /* Estilos para tablets y dispositivos más pequeños */
+  .card-img-top {
+      height: auto; /* Permite que la imagen se ajuste automáticamente */
+  }
+
+  #carouselExampleIndicators {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) { 
+  /* Estilos para teléfonos móviles */
+  #carouselExampleIndicators {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+}
+
+
